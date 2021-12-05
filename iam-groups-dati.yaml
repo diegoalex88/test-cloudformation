@@ -1,0 +1,55 @@
+--- 
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Create roles that authorizes Assume Role Team Dati and automation tools"
+Metadata: 
+  Version: 0.1
+Resources:
+  Admin:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-Admin
+  Billing:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-Billing
+  DBA:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-DBA
+  DataScientist:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-DataScientist
+  Developer:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-Developer
+  NetworkAdmin:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-Network-Admin
+  SecurityAudit:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-Security-Audit
+  SupportTeam:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-Support-Team
+  SysOps:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-SysOps
+  ReadOnly:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-ReadOnly
+  PowerUserAccess:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-PowerUserAccess
+  DatiCSTeam:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: Job-Dati-CSTeam
+    
